@@ -1,0 +1,26 @@
+{
+  "name": "Registry",
+  "plural": "Registries",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "partnerid": {
+      "type": "number",
+      "required": true
+    },
+    "serial": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "device": {
+      "type": "belongsTo",
+      "model": "Device",
+      "foreignKey": "serial"
+    }
+  },
+  "acls": [],
+  "methods": []
+}

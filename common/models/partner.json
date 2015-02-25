@@ -1,0 +1,27 @@
+{
+  "name": "Partner",
+  "plural": "Partners",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "properties": {
+    "partnerid": {
+      "type": "number",
+      "id": true,
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "devices": {
+      "type": "hasMany",
+      "model": "Device",
+      "foreignKey": "",
+      "through": "Registry"
+    }
+  },
+  "acls": [],
+  "methods": []
+}
