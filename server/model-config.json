@@ -26,15 +26,15 @@
     "dataSource": "db",
     "public": false
   },
-  "Partner": {
+  "PrefixedPartner": {
     "dataSource": "db",
     "public": true
   },
-  "Registry": {
+  "PrefixedRegistry": {
     "dataSource": "db",
     "public": true
   },
-  "Device": {
+  "PrefixedDevice": {
     "dataSource": "db",
     "public": true
   }

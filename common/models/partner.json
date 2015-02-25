@@ -1,6 +1,6 @@
 {
-  "name": "Partner",
-  "plural": "Partners",
+  "name": "PrefixedPartner",
+  "plural": "PrefixedPartners",
   "base": "PersistedModel",
   "idInjection": false,
   "properties": {
@@ -17,9 +17,9 @@
   "relations": {
     "devices": {
       "type": "hasMany",
-      "model": "Device",
-      "foreignKey": "",
-      "through": "Registry"
+      "model": "PrefixedDevice",
+      "foreignKey": "partnerid",
+      "through": "PrefixedRegistry"
     }
   },
   "acls": [],

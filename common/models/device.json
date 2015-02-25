@@ -1,6 +1,6 @@
 {
-  "name": "Device",
-  "plural": "Devices",
+  "name": "PrefixedDevice",
+  "plural": "PrefixedDevices",
   "base": "PersistedModel",
   "idInjection": false,
   "properties": {

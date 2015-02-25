@@ -1,6 +1,6 @@
 {
-  "name": "Registry",
-  "plural": "Registries",
+  "name": "PrefixedRegistry",
+  "plural": "PrefixedRegistries",
   "base": "PersistedModel",
   "idInjection": true,
   "properties": {
@@ -17,9 +17,19 @@
   "relations": {
     "device": {
       "type": "belongsTo",
-      "model": "Device",
+      "model": "PrefixedDevice",
       "foreignKey": "serial"
-    }
+    },
+    "partner": {
+      "type": "belongsTo",
+      "model": "PrefixedPartner",
+      "foreignKey": "partnerid"
+    },
+	"prefixedDevice": {
+		"type": "belongsTo",
+		"model": "PrefixedDevice",
+		"foreignKey": "serial"
+	}
   },
   "acls": [],
   "methods": []
