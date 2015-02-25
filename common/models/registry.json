@@ -25,11 +25,11 @@
       "model": "PrefixedPartner",
       "foreignKey": "partnerid"
     },
-	"prefixedDevice": {
-		"type": "belongsTo",
-		"model": "PrefixedDevice",
-		"foreignKey": "serial"
-	}
+    "prefixedDevice": {
+      "type": "belongsTo",
+      "model": "PrefixedDevice",
+      "foreignKey": "serial"
+    }
   },
   "acls": [],
   "methods": []
